@@ -1,0 +1,259 @@
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jQuery.countdownTimer.js"></script>
+<?php
+	if(!preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i',$_SESSION['current_device'])||preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i',substr($_SESSION['current_device'],0,4)))
+	{ 
+?>
+	<div class="pronosticos-block">
+		<div class="hint-wrapper">
+			<div class="topHint">
+				<img src="<?php echo $companyDetails->pc_logo; ?>" alt="<?php echo $companyDetails->empresa; ?>">
+				<p> <?php echo $companyDetails->descripcion; ?> </p>
+			</div>
+		</div>
+		<div class="score-block">
+			<div class="profile-block-pronosticos" id="justThis">
+				<div class="img-prof-block">
+					<?php if($userDetails->imagen_perfil != ''){ ?>
+						<img src="<?php echo base_url(); ?>img/empleadosPerfil/<?php echo $userDetails->imagen_perfil; ?>" alt="profile">
+					<?php }else{ ?>
+						<img src="<?php echo base_url(); ?>assets/img/profile.png" alt="profile">
+					<?php } ?>
+				</div>
+				<div class="text-prof-block">
+					<h2>Hola, <?php echo $userDetails->nombre; ?>.</h2>
+					<h4>Estás en el puesto <span><?php echo (!empty($user_rank)) ? $user_rank : 0; ?></span> del ranking con <span><?php echo (!empty($user_point->total_point)) ? $user_point->total_point : 0; ?></span> pts.</h4>
+					<p>Completá los resultados de los siguientes partidos antes del <br> viernes 15/6 a las 18:00 Buena suerte!  </p>
+				</div>
+			</div>
+			<div class="score-table">				
+				<ul>
+					<li <?php if($this->uri->segment(3) == "fase"){ ?> class="active-fecha" <?php } ?>><a href="<?php echo base_url().$_SESSION['logged_in_company'].'/pronosticos/fase'; ?>">Fase Grupos</a></li>
+					<li <?php if($this->uri->segment(3) == "octavos"){ ?> class="active-fecha" <?php } ?>><a href="<?php echo base_url().$_SESSION['logged_in_company'].'/pronosticos/octavos'; ?>">Octavos</a></li>
+					<li <?php if($this->uri->segment(3) == "cuartos"){ ?> class="active-fecha" <?php } ?>><a href="<?php echo base_url().$_SESSION['logged_in_company'].'/pronosticos/cuartos'; ?>">Cuartos</a></li>
+					<li <?php if($this->uri->segment(3) == "semi-final"){ ?> class="active-fecha" <?php } ?>><a href="<?php echo base_url().$_SESSION['logged_in_company'].'/pronosticos/semi-final'; ?>">Semi-Final</a></li>
+					<li <?php if($this->uri->segment(3) == "final"){ ?> class="active-fecha" <?php } ?>><a href="<?php echo base_url().$_SESSION['logged_in_company'].'/pronosticos/final'; ?>">Final</a></li>
+				</ul>
+			</div>
+			<div class="football-score-block">
+				<div class="command-block">
+					<p>Pronostico</p>
+				</div>
+				<div class="result-block">
+					<p>Resultado</p>
+				</div>
+				<div class="puntos-block">
+					<p>Puntos Obtenidos</p>
+				</div>
+				<div class="time-block">
+					<p><img src="<?php echo base_url();  ?>assets/img/timer.png" alt="timer"></p>
+				</div>
+			</div>
+			<form id="match-frm">
+				<div class="football-table">
+					<?php if(count($matchList) > 0){ foreach($matchList as $each_match){  ?>
+						<div class="football-item">
+							<div class="pronostico-football">
+								<div class="first-command">
+									<img src="<?php echo base_url();  ?>img/equiposBanderas/<?php echo strtolower($each_match['home_team_country']); ?>.png" alt="<?php echo $each_match['home_team_name']; ?>">
+									<p><?php echo $each_match['home_team_name']; ?></p>
+								</div>
+								<div class="score-small">
+									<input type="hidden" id="home_predection_<?php echo $each_match['match_id']; ?>"
+									<?php
+										if(isset($each_match['user_prediction'])){ ?> value = "<?php echo $each_match['user_prediction']->home_goals;  ?>" <?php } ?>
+									name="home_predection[<?php echo $each_match['match_id']; ?>]" >
+									
+									<input type="hidden" id="away_predection_<?php echo $each_match['match_id']; ?>"
+									<?php
+										if(isset($each_match['user_prediction'])){ ?> value= "<?php echo $each_match['user_prediction']->away_goals;  ?>" <?php } ?>
+									name="away_predection[<?php echo $each_match['match_id']; ?>]" >
+									
+									
+									<?php
+										$timeDifference = 0;
+										
+										$start_date = date_create($each_match['kickoff']);
+										$end_start = date_create();
+										$diff  	= date_diff( $start_date, $end_start );
+										
+										$diffTotal = $diff->y*365*24 + $diff->m*30*24 + $diff->h;
+									?>
+									
+									<p>
+										<span <?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?> contenteditable="true" <?php } ?> onkeyup="$('#home_predection_<?php echo $each_match['match_id']; ?>').val($(this).text())"><?php if(!empty($each_match['user_prediction'])){ echo $each_match['user_prediction']->home_goals; }else{ echo 'x'; } ?></span>
+										-
+										<span <?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?> contenteditable="true" <?php } ?> onkeyup="$('#away_predection_<?php echo $each_match['match_id']; ?>').val($(this).text())"><?php if(!empty($each_match['user_prediction'])){ echo $each_match['user_prediction']->away_goals; }else{ echo 'x'; }  ?></span>
+									</p>
+								</div>
+								<div class="second-command">
+									<p><?php echo $each_match['away_team_name']; ?></p>
+									<img src="<?php echo base_url();  ?>img/equiposBanderas/<?php echo strtolower($each_match['away_team_country']); ?>.png" alt="<?php echo $each_match['away_team_name']; ?>">
+								</div>
+							</div>
+							<div class="wrapper-right-side-item ">
+								<div class="resuldo-football">
+									<p><?php echo $each_match['home_goals']; ?>-<?php echo $each_match['away_goals']; ?></p>
+								</div>
+								<div class="puntos-football">
+									<p><?php echo $each_match['point']->puntos_empleado_valor; ?></p>
+								</div>
+								<div class="timer-football" id="time-left-<?php echo $each_match['match_id']; ?>">
+									<?php if($each_match['scored'] == 1 || $diffTotal < 24){
+										echo @date('h:i:s', strtotime($each_match['kickoff']));
+									} ?>
+								</div>
+								<?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?>
+									<script type="text/javascript">
+										$(function(){
+										  $("#time-left-<?php echo $each_match['match_id']; ?>").countdowntimer({
+											dateAndTime : "<?php echo $each_match['kickoff']; ?>",
+											size : "lg"
+										  });
+										});
+									</script>
+								<?php } ?>
+							</div>
+						</div>
+					<?php }} ?>
+				
+				</div>
+			</form>
+			<div class="button-wrapper-table">
+				<button data-toggle="modal" data-target="#prediction-modal" id="match-prediction-save-btn">Pronosticar</button>
+			</div>
+		</div>
+		<?php include('right-side-bar.php'); ?>
+	</div>
+<?php } ?>
+
+<?php
+	if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i',$_SESSION['current_device'])||preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i',substr($_SESSION['current_device'],0,4)))
+	{ 
+?>
+	<div class="pronosticos-small-block">
+		<div class="mobile-menu-pronosticos">
+			<div class="left-side-mobile">
+				<img src="<?php echo base_url();  ?>assets/img/mobileBurger.png" alt="mobileBurger">
+				<p>Menú</p>
+			</div>
+			<div class="right-side-mobile">
+				<p>Hola , <?php echo $userDetails->nombre; ?></p><img src="<?php echo base_url();  ?>assets/img/mobileProf.png" alt="">
+			</div>
+		</div>
+		<div class="small-dropdown omegaMenuDelta">
+			<span class="custom-dropdown">
+					<select>
+						<option>Seleccionar</option>
+						<option>The Great Gatsby</option>  
+						<option>V for Vendetta</option>
+						<option>The Wolf of Wallstreet</option>
+						<option>Quantum of Solace</option>
+					</select>
+				</span>
+		</div>
+		<div class="slider-wrap-block">
+			<div class="table-small-wrapper">
+				<?php if(count($matchList) > 0){ foreach($matchList as $each_match){  ?>
+					<div class="small-item-wrap">
+						<div class="country-block">
+							<img class='left-image-country' src="<?php echo base_url();  ?>img/equiposBanderas/<?php echo strtolower($each_match['home_team_country']); ?>.png" alt="<?php echo $each_match['home_team_name']; ?>">
+							<p><?php echo $each_match['home_team_name']; ?> <span>VS</span> <?php echo $each_match['away_team_name']; ?></p>
+							<img class='right-image-country' src="<?php echo base_url();  ?>img/equiposBanderas/<?php echo strtolower($each_match['away_team_country']); ?>.png" alt="<?php echo $each_match['away_team_name']; ?>">
+							<span class="fech-block"><p>Fecha: 16/06</p></span>
+						</div>
+						<div class="time-small-block">
+							<?php
+								$timeDifference = 0;
+								
+								$start_date = date_create($each_match['kickoff']);
+								$end_start = date_create();
+								$diff  	= date_diff( $start_date, $end_start );
+								
+								$diffTotal = $diff->y*365*24 + $diff->m*30*24 + $diff->h;
+							?>
+							
+							
+							
+							<div class="roundred leftRound" <?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?> contenteditable="true" <?php } ?> onkeyup="$('#home_predection_<?php echo $each_match['match_id']; ?>').val($(this).text())"><?php if(!empty($each_match['user_prediction'])){ echo $each_match['user_prediction']->home_goals; }else{ echo 'x'; }  ?></div>
+							<span>X</span>
+							<div class="roundred rightRound" <?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?> contenteditable="true" <?php } ?> onkeyup="$('#away_predection_<?php echo $each_match['match_id']; ?>').val($(this).text())"><?php if(!empty($each_match['user_prediction'])){ echo $each_match['user_prediction']->away_goals; }else{ echo 'x'; }  ?></div>
+							
+							<img src="<?php echo base_url();  ?>assets/img/timer.png" class="small-timer" alt="timer">
+							
+							<?php if($each_match['scored'] != 1 && $diffTotal > 24){ ?>
+								<script type="text/javascript">
+									$(function(){
+									  $("#time-left-<?php echo $each_match['match_id']; ?>").countdowntimer({
+										dateAndTime : "<?php echo $each_match['kickoff']; ?>",
+										size : "lg"
+									  });
+									});
+								</script>
+							<?php } ?>
+						</div>
+					</div>
+				<?php }} ?>
+			</div>
+			<div class="small-another-block">
+				<div class="wrapper-inner-me">
+					<h3>Goleador  y Ganador del mundial</h3>
+				</div>
+				<div class="small-dropdown">
+					<div class="dropdown-text">
+					<p>¿Quién será el goleador de Russia 2018?</p>
+					<span class="custom-dropdown">
+						<select>
+							<option>Seleccionar</option>
+							<option>The Great Gatsby</option>  
+							<option>V for Vendetta</option>
+							<option>The Wolf of Wallstreet</option>
+							<option>Quantum of Solace</option>
+						</select>
+					</span>
+	
+				</div>
+					<div class="dropdown-text  noborder">
+						<p>¿Qué equipo ganará el mundial?</p>
+						<span class="custom-dropdown">
+							<select>
+								<option>Seleccionar</option>
+								<option>The Great Gatsby</option>  
+								<option>V for Vendetta</option>
+								<option>The Wolf of Wallstreet</option>
+								<option>Quantum of Solace</option>
+							</select>
+						</span>
+	
+					</div>
+				</div>
+				<div class="wrapper-sec-slide">
+					<button>Enviar Respuesta</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+
+
+<div class="modal fade" id="prediction-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <h3>Tus pronósticos fueron guardados!</h3>
+    </div>
+  </div>
+</div>
+
+<script>
+	$('#match-prediction-save-btn').on('click', function(){
+		$.ajax({
+			url: '<?php echo base_url(); ?>'+company+'/save-prediction',
+			type: "POST",
+			data: $('#match-frm').serializeArray(),
+			dataType: "json",
+			success: function(response){
+				location.reload();		
+			}
+		});	
+	});
+</script>

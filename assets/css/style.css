@@ -1,0 +1,4063 @@
+@font-face{
+	font-family: DushaFifa; 
+    src: url(../fonts/DeltaFont.ttf) format("ttf"),
+		 url(../fonts/Delta.woff2) format("woff2"),
+		 url(../fonts/Delta.woff) format("woff"),
+		 url(../fonts/Delta.svg) format("svg"),
+		 url(../fonts/Delta.eot) format("eot");
+    ; 
+}
+@font-face{
+	font-family:RobotoRegular;
+	src:url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family:RobotoMedium;
+	src:url(../fonts/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family:AvenirNextRegular;
+	src:url(../fonts/AvenirNext-Regular.ttf) ;
+}
+@font-face{
+	font-family:AvenirNextBold;
+	src:url(../fonts/AvenirNext-Bold.ttf);
+}
+@font-face{
+	font-family: GothamMedium; 
+    src: url(../fonts/GothamMedium.ttf); 
+}
+@media (max-width:991px){
+	.menu-small-delta .main-part>ul{
+		margin-top:60px!important;
+	}
+	div  .menu-small-delta .main-part>ul>li{
+		margin-bottom:5px!important;
+	}
+	div.menu-small-delta .main-part>ul>li>a{
+		font-size:18px;
+	}
+	div .menu-small-delta{
+		width:350px;
+		background-size:135%;
+	}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	div .wrapper-right-side-item{
+		position: relative;
+		top:0px;
+	}
+	.first-command p, .second-command p{
+		width:70px;
+	}
+	div .score-small{
+			width:75px;
+		}
+
+	 div div .ranking-football{
+		position: absolute!important;
+		left:420px;
+		top:180px!important;
+	}
+}
+@media (max-width:480px){
+	div .menu-small-delta{
+		width:280px;
+		background-size: 150%;
+	}
+}
+html,body{
+	height:100%;
+	position: relative;
+}
+body>div{
+	min-height:100%;
+}
+/* LOGIN PAGE START */
+
+.login-block{
+	padding-top:50px;
+	background:url("../img/football-bck.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.form-inner-block{
+	background-color:rgba(0,0,0,0.5);
+	border-radius:15px;
+	padding:20px;
+	width:420px;
+	margin:0 auto;
+	box-shadow: 0px 10px 19px rgba(0,0,0,0.3); 
+}
+.image-nestle{
+	width:150px;
+	margin:0 auto;
+	display:block;
+	margin-bottom:10px;
+}
+.form-inner-block>form>.wrapper-input>input[type='text']{
+	width:100%;
+	height:47px;
+	border-radius:3px;
+	border:0px;
+	padding-left:50px;
+	font-size:18px;
+	color:#9A9EAA;
+}
+.form-inner-block>form>.wrapper-input>input[type='password']{
+width: 100%;
+height: 47px;
+border-radius: 3px;
+border: 0px;
+padding-left: 50px;
+font-size: 18px;
+color: #9A9EAA;
+}
+.userName-inpt::-webkit-input-placeholder{
+	position:relative;
+	top:0;
+}
+.userName-inpt{
+	color:rgba(0,0,0,0.5);
+}
+.password-inpt{
+	margin-bottom:40px;
+	color:rgba(0,0,0,0.5);
+}
+.password-inpt::-webkit-input-placeholder { 
+ 	position: relative;
+ 	top:5px;
+}
+.password-inpt::-moz-placeholder { 
+	position: relative;
+	top:5px;
+}
+.password-inpt:-ms-input-placeholder {
+	position: relative;
+	top:5px;
+}
+.bottom-text a {
+	color:white;
+	transition:.3s ease all;
+}
+.bottom-text a:hover{
+	color:white;
+	opacity:0.7;
+	text-decoration: none;
+}
+.first-inp{
+	position: relative;
+	top:36px;
+	display:inline-block;
+	left:15px;
+}
+.first-inp i{
+	font-size:17px;
+	color:#9A9EAA;
+}
+.form-inner-block input[type='submit']:hover{
+	opacity:0.7;
+}
+.form-inner-block input[type='submit']{
+	width:80%;
+	margin:0 auto;
+	display:block;
+	height:50px;
+	cursor:pointer;
+	transition:.3s ease all;
+	border:0px;
+	border-radius:20px;
+	font-size:28px;
+	font-family: DushaFifa;
+	box-shadow:0px 7px 11px rgba(0,0,0,0.8); 
+	margin-bottom:30px;
+	background:url('../img/button-background.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.bottom-text{
+	padding-bottom:30px;
+}
+.bottom-text>*{
+	display:inline-block;
+	color:white;
+	font-family: DushaFifa;
+	font-size:18px;
+}
+.bottom-text>p{
+	float:left;
+}
+.bottom-text>a{
+	float:right;
+}
+.form-outer>p{
+	text-align: center;
+	margin-top:10px;
+	color:white;
+	font-family:"GothamMedium" , sans-serif;
+	font-size:17px;
+	line-height: 19px;
+}
+.wrapper-left-logo>img{
+	width:120px;
+	margin:10px auto;
+	display:block;
+}
+.big-logo-wrapper{
+	text-align: right;
+	margin-top:50px;
+}
+.big-logo-wrapper>img{
+	width:400px;
+}
+.small-wrapp{
+	display:none;
+	text-align: center;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+@media (max-width:1400px){
+	.form-inner-block input[type='submit']{
+		margin-bottom:20px;
+	}
+	.form-inner-block>form>.wrapper-input>input[type='text']{
+		margin-bottom:20px;
+	}
+}
+@media (min-width:992px){
+	.login-page{
+		overflow-y: hidden;
+	}
+}
+@media (max-width: 991px) {
+	.rankingPAGE .left-menu-block , .condinPage .left-menu-block , .pronosticDelta .left-menu-block , .recupPAge .left-menu-block{
+		display:none;
+	}
+	.imageSlider  .left-menu-block{
+		display:inline-flex;
+	}
+	.login-block{
+		background-position: left;
+		background-size:cover;
+	}
+	.small-wrapp>img{
+		width:320px;
+		margin-bottom:20px;
+	}
+	.form-outer>p{
+		margin-bottom:80px;
+	}
+
+	.wrapper-left-logo{
+		display:none;
+	}
+	div .small-wrapp{
+		display:block;
+	}
+	.right-side{
+		display:none;
+	}
+	.login-block{
+		padding-top:0px;
+	}
+}
+@media  (max-width:767px){
+	.imageSlider  .left-menu-block{
+		display:none;
+	}
+		#indexModal .modal-content>img{
+		position: absolute;
+    	bottom: -39px;
+    	left: -77px;
+    	width: 203px;
+	}
+	
+
+}
+@media (max-width: 480px) {
+	.form-inner-block input[type='submit']{
+		background-size:cover;
+	}
+	.small-wrapp img{
+		width:100%;
+	}
+	.form-inner-block{
+		width:100%;
+	}
+	p br{
+		display:none;
+	}
+}
+@media (max-width: 360px) {
+	.bottom-text>*{
+		width:100%;
+		float:none;
+		text-align: center;
+	}
+	.bottom-text{
+		margin-bottom:30px;
+	}
+}
+  
+/* LOGIN PAGE END */
+
+
+
+
+
+/*IMAGE SLIDER PAGE START */
+ @media all and (-ms-high-contrast:none)
+     {
+  		div .left-menu-block{
+  			display:inline-block;
+		}
+		.left-menu-block>.menu-open{
+			position:absolute;
+			top:45%;
+			height:auto!important;
+			left:27px;
+			display:inline-block!important;
+		}
+     }
+.small-image-slider{
+	display:none;
+}
+body{
+	margin:0px;
+	padding:0px;
+	overflow-x: hidden;
+}
+.main-img-block{
+	background:url("../img/slider-background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.wrapper-menu-logo{
+	position: absolute;
+	bottom:20px;
+	text-align: center;
+	width:100%;
+	left:0px;
+}
+.wrapper-menu-logo>img{
+	width:66px;
+}
+
+.menu-open>p{
+	margin-top:5px;
+	font-family:"DushaFifa" , sans-serif;
+	color:white;
+	font-size:18px;
+	cursor:pointer;
+}
+.menu-open>img{
+	width:45px;
+	cursor:pointer;
+}
+.left-menu-block{
+	width:100px;
+	display:flex;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+	justify-content: center;
+	align-items: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	z-index:100;
+	min-height:100%;
+	background:url("../img/left-menu-background.png");
+	background-position: left;
+	background-size:cover;
+	position: absolute;
+}
+.left-menu-block>.menu-open{
+	height:100%;
+	display:flex;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */      /* TWEENER - IE 10 */
+  	display: -webkit-flex;   
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.image-slider-block{
+	margin-left:100px;
+}
+/*.image-inner-wrapper img{
+	width:100%;
+	max-width:1600px;
+}*/
+.image-inner-wrapper{
+	width:100%;
+	min-height:100%!important;
+	background-position: left!important;
+	background-repeat: no-repeat!important;
+	background-size:contain!important;
+}
+.small-image-inner{
+	min-height:500px!important;
+	background-position: center!important;
+	background-repeat: no-repeat!important;
+	background-size:cover!important;
+}
+.image-inner-slider{
+	display: flex;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */      /* TWEENER - IE 10 */
+  	display: -webkit-flex;   
+    justify-content: flex-start;
+align-items: center;
+    min-height:100%;
+}
+
+div .small-image-slider{
+	min-height:auto;
+	display:none;
+}
+div .small-image-inner{
+	min-height:600px!important;
+}
+@media (max-width:767px) {
+	.main-img-block{
+		height:auto;
+	}
+	.image-slider-block{
+		display:none;
+	}
+	div .small-image-slider{
+		display:block;
+	}
+	.left-menu-block{
+		display:none;
+	}
+	.image-slider-block{
+		margin-left:0px;
+	}
+}
+
+
+/* IMAGE SLIDER PAGE END */
+
+
+/*Pronosticos page start*/
+.profile-block{
+	position: absolute;
+	top:25px;
+	left:0px;
+	width:100%;
+	text-align: center;
+}
+.profile-block>img{
+	width:45px;
+	cursor:pointer;
+}
+.pronosticos-block{
+	min-height:100vh;
+	background: url("../img/pronostic-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	position: relative;
+}
+.corner-image{
+	position: absolute;
+	right:0px;
+	bottom:0px;
+	width:400px;
+	z-index:10;
+}
+.topHint{
+	width: 750px;
+    background: url(../img/hintBlock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-flex;
+
+    height: 150px;
+    justify-content: center;
+    padding-left:30px;
+    padding-right:30px;
+    justify-content: flex-start;
+	align-items: center;
+    position: relative;
+    top:-35px;
+    margin-left:50px;
+}
+.topHint>p{
+	font-size:20px;
+	color:white;
+	font-family: DushaFifa;
+	line-height: 20px;
+	padding-top:12px;
+	height: 45px;
+    overflow: auto;
+
+}
+.topHint>p::-webkit-scrollbar { width: 0; }
+
+.topHint>p { -ms-overflow-style: none; }
+
+.topHint>p { overflow: -moz-scrollbars-none; }
+.topHint img{
+	width:100px;
+	margin-right:20px;
+}
+.pronosticos-block{
+	margin-left:100px;
+}
+.profile-block-pronosticos{
+	display:flex;
+	align-items: center;
+	margin-left:50px;
+}
+.img-prof-block{
+	display:inline-block;
+	width: 100px;
+    height: 100px;
+	background-position: inherit;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 10px 10px 10px 0px;
+}
+.img-prof-block>img{
+	width:90px;
+}
+.text-prof-block{
+	display:inline-block;
+}
+.text-prof-block>h2{
+	color:#343a3c;
+	font-family: DushaFifa;
+	font-size:48px;
+	line-height: 40px;
+	font-weight:100;
+	margin-top:30px;
+	margin-bottom:0px;
+}
+.text-prof-block>h4{
+	margin-top:0px;
+	margin-bottom:0px;
+	color:#a41115;
+	font-size:30px;
+	font-family: DushaFifa;
+	font-weight:400;
+	margin-bottom:0px;
+}
+.text-prof-block>h4>span{
+	color:#000000;
+}
+.text-prof-block>p{
+	margin-top:0px;
+	color:#343a3c;
+	font-size:16px;
+	margin-bottom:0px;
+	font-family: DushaFifa;
+	font-weight:400;
+}
+.score-table{
+	margin-left:50px;
+	background:url("../img/red-background.png");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	display:inline-block;
+	margin-top:20px;
+	padding:0px 70px;
+	height:65px;
+}
+.score-table>ul{
+	list-style-type: none;
+	padding-left:0px;
+	margin-top:15px;
+}
+.score-table>ul>li{
+	display:inline-block;
+	padding:6px 43px;
+	font-family: DushaFifa;
+	font-size:18px;
+	border-right:1px solid #343a3c;
+}
+.score-table>ul>li:last-child{
+	border-right:0px;
+}
+.command-block , .football-item>.pronostico-football{
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	width:55%;
+
+}
+.football-item>.pronostico-football{
+	/*background:url("../img/leftside-table.png");*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+	z-index:1000;
+}
+/*.football-item>div{
+	float:left;
+}*/
+.result-block , .resuldo-football{
+	width:20%;
+	display:inline-block;
+}
+.puntos-block , .puntos-football{
+	width:15%;
+	display:inline-block;
+}
+.time-block , .timer-football{
+	display:inline-block;
+	width:10%;
+}
+.football-score-block{
+	width:815px;
+	margin-left:120px;
+}
+.score-block{
+	display:inline-block;
+}
+.football-score-block>div{
+	float:left;
+	margin-top:10px;
+	text-align: center;
+}
+.football-score-block>div>p{
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color:#343a3c;
+	font-family: DushaFifa;
+	font-size:21px;
+	margin:0px;
+	height:40px;
+}
+.time-block img{
+	width:20px;
+}
+.football-table{
+	width:815px;
+	margin-left:70px;
+	padding-left:50px;
+}
+.score-small{
+	font-family: DushaFifa;
+	font-size:25px;
+	padding:5px 10px;
+	margin:0px;
+	text-transform: uppercase;
+	background:url("../img/score-bck.png");
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	background-size:90%;
+	margin:0px 10px;
+}
+.score-small>p{
+	margin:0px;
+	color:#dadada;
+}
+.score-small>div{
+	margin:0px;
+	color:#dadada;
+}
+div.roundred{
+	width:59px;
+	height:55px;
+	border-radius: 14px;
+	background-color:#A51C21;
+	cursor:pointer;
+	font-size:39px;
+	text-align: center;
+	color: #dadada;
+	font-family: DushaFifa;
+}
+div.leftRound{
+	margin-right:5px;
+}
+div.rightRound{
+	margin-left:5px;
+}
+.first-command , .second-command , .score-small{
+	display:inline-block;
+}
+.first-command p, .second-command p , .score-small p{
+	display:inline-block;
+}
+.first-command img{
+	margin-right:5px;
+	width:42px;
+}
+.second-command img{
+	margin-left:5px;
+	width:42px;
+}
+.first-command p, .second-command p{
+	color:#4e4e4e;
+	margin:0px;
+	font-family: DushaFifa;
+	font-size:22px;
+}
+.pronostico-football>div{
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.resuldo-football{
+	height:46px;
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.resuldo-football>p{
+	text-align: center;
+	color:#4e4e4e;
+	font-family: DushaFifa;
+	font-size:25px;
+	margin:0px;
+}
+.wrapper-right-side-item{
+	width: 46%;
+   /* background: url(../img/rightside-test.png);*/
+    background-size: 100% 100%;
+    height: 45px;
+    right: 20px;
+    top: auto;
+    background-position: right;
+    position: absolute;
+    z-index: 10;
+}
+.football-item{
+	position: relative;
+}
+.wrapper-right-side-item p{
+	margin:0px;
+}
+.wrapper-right-side-item>div{
+	width:40%;
+}
+.wrapper-right-side-item>div:nth-child(3){
+	width:20%;
+}
+div div .resuldo-football{
+	width:44%;
+}
+div div .puntos-football{
+	width:32%;
+	text-align: center;
+    color: #4e4e4e;
+    font-family: DushaFifa;
+    font-size: 25px;
+    margin: 0px;
+}
+div div .timer-football{
+	font-size:19px;
+	text-align: center;
+    color: #4e4e4e;
+    font-family: DushaFifa;
+
+}
+.football-item{
+	display:flex;
+	align-items: center;
+	margin-bottom:0px;
+	background: url("../img/leftside-table.png");
+	background-position: center;
+	background-size:100% 46px;
+	background-repeat: no-repeat;
+	padding:10px;
+}
+/*.not-dope-block{
+	top:-5px;
+}*/
+div div .first-command{
+	width:126px;
+	justify-content: flex-start;
+	margin-right: 5px;
+}
+.score-small{
+	width:75px;
+}
+div div .second-command{
+	width:145px;
+	justify-content: flex-end;
+	margin-left: 10px;
+}
+.grupo-block{
+    position: absolute;
+    bottom: -25px;
+    height: 25px;
+    display: inline-block;
+}
+.grupo-block p{
+	font-family: DushaFifa;
+	font-size:19px;
+	text-transform: none;
+	position: relative;
+	top:-10px;
+}
+.football-table{
+	height:280px;
+	direction: rtl;
+	margin-top:60px;
+	overflow-y: scroll;
+}
+.football-table>div{
+	direction: ltr;
+}
+.active-fecha{
+	position: relative;
+}
+.active-fecha a{
+	border-bottom:2px solid #ce151c;
+}
+/*.active-fecha:before{
+    content: "";
+    position: absolute;
+    width: 94px;
+    height: 2px;
+    bottom: 5px;
+    border-bottom: 2px solid #ce151c;
+}*/
+.timer-right-block{
+	display:inline-block;
+	float:right;
+	text-align: center;
+	margin-right: 100px;
+	margin-top:-120px;
+	position: relative;
+	z-index:100;
+}
+.timer-right-block img{
+	width:260px;
+}
+.timer-inner-block>h5{
+	text-align: center;
+	font-family: DushaFifa;
+	font-size:28px;
+	font-weight:100;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+.timerConsist{
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size:36px;
+	margin-top:10px;
+	font-family: DushaFifa;
+	font-weight:bold;
+}
+.timerConsist>img{
+	width:40px;
+}
+.score-table ul li a{
+	text-decoration: none;
+	color:#000000;
+	transition:.3s ease all;
+}
+.score-table ul li a:hover{
+	opacity:0.7;
+}
+.timerConsist>p{
+	margin-left:20px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.timernext{
+	display:block;
+	text-align: center;
+	font-size:27px;
+	margin:0px;
+	width:100%;
+	font-family: DushaFifa;
+	font-weight:100;
+}
+.dropdown-text>p{
+	font-size:22px;
+	font-family: DushaFifa;
+	color:black;
+	margin-bottom:0px;
+}
+.button-wrapper-table{
+	margin-top:20px;
+	text-align: center;
+}
+.button-wrapper-table>button{
+	cursor:pointer;
+	font-size:26px;
+	font-family: DushaFifa;
+	color:white;
+	border:0px;
+	padding:10px 52px;
+	background:url("../img/submitButtonRed.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+@media (max-width:1500px) {
+	div .timer-right-block{
+		margin-right:0px;
+	}
+	.topHint{
+		width:715px;
+		height:110px;
+		margin-left:20px;
+		top:-15px;
+	}
+	.football-table{
+		height:289px;
+	}
+	.button-wrapper-table{
+		margin-top:30px;
+	}
+}
+@media (max-width:1400px){
+	.button-wrapper-table{
+		margin-top:15px;
+	}
+	.img-prof-block>img{
+		width:80px;
+	}
+	.football-table{
+		margin-top:55px;
+	}
+	.football-score-block>div>p{
+		font-size:19px;
+	}
+	.football-score-block>div{
+		margin-top:5px;
+	}
+	.topHint>p{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.text-prof-block>h2{
+		font-size:42px;
+	}
+	.text-prof-block>h4{
+		font-size:24px;
+	}
+	.text-prof-block>p{
+		font-size:15px;
+	}
+	.timer-right-block{
+		margin-right:20px!important;
+	}
+	.timer-right-block>img{
+		margin-top:30px;
+		width:200px;
+	}
+	.timer-inner-block>h5{
+		margin-top:10px;
+		font-size:24px;
+	}
+	.timerConsist>img{
+		width:30px;
+	}
+	.timerConsist>p{
+		font-size:22px;
+	}
+	.timernext{
+		font-size:24px;
+	}
+	.timer-right-block .dropdown-text>p{
+		margin-top:10px;
+	}
+	.score-small{
+		background-position: 4px 4px;
+		background-size: 91%;
+	}
+	.score-table{
+		margin-left:10px;
+		background-size:100%;
+		background-repeat: no-repeat;
+    	display: inline-block;
+    	margin-top: 10px;
+    	padding: 0px 75px;
+    	height: 55px;
+
+	}
+	.score-table>ul{
+		margin-top:12px;
+	}
+	.profile-block-pronosticos{
+		margin-left:10px;
+	}
+	.football-table{
+		margin-left:0px;
+	}
+	.football-score-block{
+		margin-left:40px;
+	}
+	.first-command p, .second-command p{
+		font-size:14px;
+	}
+	.second-command img{
+		margin-left:5px;
+	}
+	.first-command img{
+		margin-right:5px;
+	}
+	div div .resuldo-football{
+		width:42%;
+	}
+	div div .puntos-football{
+		width:25%;
+	}
+	.wrapper-right-side-item>div:nth-child(3){
+		width:20%;
+		font-size: 15px;
+	}
+	.football-score-block{
+		width:700px;
+	}
+	.football-table{
+		width:700px;
+	}
+	.football-score-block>.command-block>p{
+		margin-left:10%;
+	}
+	.score-table>ul>li{
+		font-size:17px;
+		padding:6px 27px;
+	}
+	.topHint{
+		width:714px;
+		height:90px;
+		margin-left:20px;
+		top:-10px;
+		background-size:100%;
+		background-position: bottom;
+	}
+	.score-small{
+		font-size:30px;
+	}
+	.text-prof-block>h2{
+		margin-top:0px;
+	}
+
+}
+@media (max-width:480px){
+	div.roundred{
+		width: 55px;
+		height: 33px;
+		border-radius:10px;
+		font-size:25px;
+	}
+}
+@media (max-width:400px){
+
+	div .time-small-block{
+		height:48px;
+	}
+	div .small-group{
+		top:0px;
+	}
+	div .fech-block{
+		bottom:0px;
+	}
+	div .country-block>p{
+		font-size:13px;
+	}
+	div .country-block>p>span{
+		font-size:17px;
+	}
+	div.roundred {
+    width: 59px;
+    height: 27px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+}
+@media (max-width:1200px){
+	div  .condiciones-inner{
+		height:270px;
+	}
+	div .first-command img{
+		width:45px;
+	}
+	div .second-command img {
+		width:45px;
+	}
+	.first-command p, .second-command p{
+		font-size:16px;
+	}
+	.score-small{
+		font-size:22px;
+	}
+	
+	.div-select{
+		margin-top: -2px !important;
+	}
+	.wrapper-right-side-item {
+		height:35px;
+	}
+	.score-small{
+		width:50px;
+	}
+	.resuldo-football{
+		height:33px;
+	}
+	.resuldo-football>p{
+		font-size:18px;
+	}
+	.wrapper-right-side-item{
+		right:5px;
+	}
+	.wrapper-right-side-item p{
+		font-size:18px;
+	}
+	div div .timer-football{
+		font-size:16px;
+	}
+	.football-table{
+		width:590px;
+		position: relative;
+		z-index:1000000;
+		margin-top:50px;
+	}
+	div .score-table>ul>li{
+		font-size:16px;
+	}
+	div .score-table{
+		padding:0px 45px;
+		background-size:contain;
+		margin-top:0px;
+	}
+	.football-score-block{
+		width:590px;
+	}
+	.football-score-block>div>p{
+		font-size:18px;
+	}
+	.timer-right-block>img{
+		width:190px;
+	}
+	.timerConsist>p{
+		font-size:28px;
+	}
+	.timernext{
+		font-size:24px;
+	}
+	.timerConsist>img{
+		width:30px;
+	}
+	.timer-inner-block>h5{
+		font-size:22px;
+	}
+	.dropdown-text>p{
+		font-size:18px;
+	}
+	div .custom-dropdown select{
+		width:180px;
+		font-size:16px;
+
+	}
+	div .custom-dropdown::before{
+		top:12px;
+		background-size:26px;
+	}
+	.topHint{
+		width:560px;
+	}
+	.button-wrapper-table>button{
+		font-size:22px;
+		padding:10px 42px;
+	}
+	.text-prof-block>h2{
+		font-size:40px;
+	}
+	.text-prof-block>h4{
+		font-size:25px;
+	}
+	.football-score-block>div{
+		margin-top:0px;
+	}
+	.football-table{
+		height:240px;
+	}
+}
+@media (max-width:1060px){
+	.timer-right-block{
+		margin-top:-100px;
+		width:200px;
+	}
+	.timer-right-block>img{
+		width:100%;
+	}
+	.score-table>ul>li{
+		padding:6px  24px;
+	}
+
+}
+.pronosticos-small-block{
+	display:none;
+}
+@media (max-width:991px){
+	.slider-wrap-block{
+		padding-top:40px;
+	}
+	.noborder{
+		border-bottom:0px!important;
+	}
+	.wrapper-sec-slide{
+		text-align: center;
+		margin-bottom:40px;
+		padding-bottom:50px;
+	}
+	.wrapper-sec-slide>button{
+		width:340px;
+		font-family: DushaFifa;
+		font-size:27px;
+		background: url(../img/redSelect.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		border:0px;
+		color:white;
+		height:50px;
+	}
+	.wrapper-inner-me{
+		text-align: center;
+		margin-bottom:40px;
+	}
+	.small-dropdown{
+		text-align: center;
+	}
+	.small-dropdown p{
+		font-size:32px;
+	}
+	.small-dropdown .dropdown-text{
+		padding-bottom:40px;
+		display:block;
+		width:400px;
+		margin:0 auto;
+		margin-bottom:20px;
+		border-bottom:1px solid #acacac;
+	}
+	.small-dropdown .dropdown-text>p{
+		margin-bottom:30px;
+	}
+	div .small-dropdown select{
+		width:280px;
+		font-size:25px;
+	}
+	.small-dropdown  .custom-dropdown::before{
+		top:20px;
+	}
+
+	.small-another-block>.wrapper-inner-me>h3{
+		color:#af1217;
+		font-family:"DushaFifa" , sans-serif;
+		font-size:32px;
+		text-align:left;
+		display:inline-block;
+	}
+	.small-button-wrapper{
+		margin-top:40px;
+	}
+	.small-button-wrapper button{
+		width:250px;
+		color:white;
+		font-family: DushaFifa;
+		display:block;
+		margin:0 auto;
+		border:0px;
+		font-size:24px;
+		height:50px;
+		border-radius:10px;
+		background:url("../img/smallButBack.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	.left-menu-block{
+		display:none;
+	}
+	.pronosticos-block{
+		margin-left:0px;
+		display:none;
+	}
+	.pronosticos-small-block{
+		display:block;
+		min-height:100vh;
+	background: url("../img/pronostic-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	position: relative;
+	overflow-x:hidden;
+
+	}
+	.mobile-menu-pronosticos{
+		height:60px;
+		background-color:black;
+		width:100%;
+		position:fixed;
+		padding:0px 30px;
+		z-index:1000000000;
+	}
+	.left-side-mobile{
+		float:left;
+		display:inline-flex;
+		align-items: center;
+		height:100%;
+	}
+	.left-side-mobile img{
+		margin-right:10px;
+		width:30px;
+	}
+	.left-side-mobile>p{
+		color:white;
+		font-family: DushaFifa , sans-serif;
+	}
+	.right-side-mobile{
+		float:right;
+		display:inline-flex;
+		margin-right:50px;
+		height:100%;
+		align-items: center;
+	}
+	.right-side-mobile>p{
+		color:white;
+		font-family: DushaFifa , sans-serif;
+		margin-right:15px;
+	}
+	.right-side-mobile>img{
+		width:40px;
+	}
+	.table-small-wrapper{
+		padding-top:0px;
+/*		padding-left:10px;
+		padding-right:10px;*/
+	}
+	.country-block{
+		width:auto;
+		display:inline-flex;
+		align-items: center;
+		position: relative;
+		z-index:100;
+	}
+	.time-small-block{
+		display:inline-block;
+		width:35%;
+		float:right;
+	}
+	.country-block img{
+		width:40px;
+	}
+	.country-block>img:nth-child(1n){
+		margin-right:20px;
+	}
+	.country-block>img:nth-child(2n-1){
+		margin-left:20px;
+	}
+	.country-block>p{
+		font-family:"AvenirNextBold" , sans-serif;
+		font-weight:bold;
+		font-size:22px;
+		display:inline-block;
+	}
+	.country-block>p>span{
+		margin-left:15px;
+		font-size:28px;
+		display:inline-block;
+		margin-right:15px;
+	}
+
+	.small-item-wrap{
+		background:url("../img/bckGrey.png");
+		background-size:cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius:20px;
+		margin-bottom:10px;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	.time-small-block{
+		display:inline-flex;
+		justify-content: center;
+		align-items: center;
+		height:82px;
+	}
+	.roundRed{
+		width:40px;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	.time-small-block>span{
+		font-family:"AvenirNextBold" , sans-serif;
+		font-weight:bold;
+		font-size:22px;
+	}
+	.small-timer{
+		margin-left:20px;
+	}
+	
+	.small-group , .fech-block{
+		display:inline-block;
+		position: absolute;
+		text-align: center;
+		left:0px;
+		right:0px;
+		font-family: "AvenirNextRegular" , sans-serif;
+		margin-left:25px;
+		font-size:15px;
+		z-index:0;
+	}
+	.small-group>p,.fech-block>p{
+		margin:0px;
+		font-size:14px;
+	}
+	.small-group{
+		top:10px;
+	}
+	.fech-block{
+		bottom:10px;
+		margin-left:25px;
+	}
+}
+@media (max-width:767px){
+	.time-small-block{
+		height:72px;
+	}
+	.country-block>p{
+		font-size:20px;
+	}
+	.time-small-block{
+		width:auto;
+	}
+	.small-item-wrap{
+		padding:0px 20px;
+	}
+	.small-item-wrap .country-block>img{
+		margin:0px;
+	}
+	 .left-image-country{
+		margin-right:10px!important;
+	}
+	.right-image-country{
+		margin-left:10px!important;
+	}
+	.leftRound{
+		margin-left:0px;
+		width:35px;
+	}
+	.rightRound{
+		margin-right:0px;
+		width:35px;
+	}
+	.small-timer{
+		width:25px;
+	}
+	.small-item-wrap .country-block>img{
+		width:30px;
+	}
+	.country-block>p{
+		font-size:17px;
+		    display: inline-flex;
+    align-items: center;
+	}
+	.small-group>p, .fech-block>p{
+		font-size:13px;
+	}
+	.small-group{
+		top:5px;
+	}
+	.fech-block{
+		bottom:1px;
+	}
+}
+@media (max-width:570px){
+
+	.country-block>p>span{
+		margin-left:5px;
+		margin-right:5px;
+	}
+	.rightRound , .leftRound{
+		width:25px;
+	}
+	.time-small-block>span{
+		font-size:18px;
+	}
+	.country-block>p>span{
+		font-size:14px;
+	}
+	.small-timer{
+		width:20px;
+	}
+	.time-small-block{
+		height:72px;
+	}
+	.country-block>p{
+		font-size:12px;
+		width: 143px;
+	}
+	.left-image-country{
+		margin-right:5px!important;
+	}
+	.right-image-country{
+		margin-left:5px!important;
+	}
+	.time-small-block{
+		height:59px;
+	}
+/*	.small-item-wrap{
+		padding:0px 10px;
+	}
+	.table-small-wrapper{
+		padding-left:10px;
+		padding-right:10px;
+	}*/
+	.small-timer{
+		margin-left:10px;
+	}
+	.leftRound{
+		margin-right:5px;
+	}
+	.rightRound{
+		margin-left:5px;
+	}
+}
+@media (max-width:480px){
+	.wrapper-sec-slide>button{
+		width:280px;
+		margin:0  auto;
+	}
+	.small-another-block .custom-dropdown{
+		margin-left:-10px;
+	}
+	.small-item-wrap .country-block>img{
+		width:24px;
+	}
+	.small-item-wrap{
+		padding:0px 5px;
+	}
+	.small-another-block>.wrapper-inner-me>h3{
+		text-align: center;
+	}
+	.small-item-wrap{
+		margin-bottom:20px;
+	}
+}
+@media (max-width:400px){
+	.small-button-wrapper button{
+		width:80%;
+		height:50px;
+	}
+	.custom-dropdown select{
+		width:80%;
+	}
+}
+/*Pronosticos page end*/
+
+
+
+@media (min-width:1601px) {
+	.login-block{
+		height:974px;
+	}
+}
+@media(max-width:1400px){
+	.login-block{
+		padding-top:10px;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px)  {
+
+	body{
+		height:100%;
+	}
+}
+
+
+
+.custom-dropdown select{
+	background-color: #d2171e;
+	background-position: 170px 15px;
+	width:210px;
+}
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+}
+.custom-dropdown select option{
+	background-color: #d2171e;
+}
+.custom-dropdown select {
+	cursor:pointer;
+  background-color: #d2171e;
+  color: #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  padding-left:20px;
+  font-family: DushaFifa;
+  border-radius: 10px;
+  font-size:20px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  position: relative;
+  z-index:200;
+  background:url("../img/redSelect.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background-color: #d2171e;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "";
+background-color: #d2171e;
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  background: url("../img/arrow-white.png");
+  background-repeat: no-repeat;
+  right: 10px;
+  top: 10px;
+  bottom: 0;
+  z-index:10000000;
+
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: #FFF;
+  background-color: #d2171e;
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+  background-color: #d2171e;
+}
+
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+  background-color: #d2171e;
+}
+
+
+/* condiciones block */
+
+/*.condiciones-inner{
+	border:1px solid #a1a1a1;
+}*/
+.condinPage .timer-right-block{
+	position: relative;
+	z-index:10000000000;
+}
+.condiciones-blockDelta{
+	display:inline-block;
+	width:700px;
+	margin-left:50px;
+}
+.condiciones-blockDelta>h3{
+	color:#a11015;
+	font-family:DushaFifa;
+	font-size:36px;
+	text-align: center;
+}
+.condiciones-inner{
+	overflow-y: scroll;
+	height:340px;
+	padding:20px;
+	display:inline-block;
+	border :2px solid #a1a1a1;
+	position: relative;
+	z-index:100000000;
+}
+.condiciones-inner p{
+	display:inline-block;
+	font-size: 21px;
+    font-family: DushaFifa;
+    margin:0px;
+    margin-bottom:0px;
+    color: #3b3b3b;
+    line-height:30px;
+	white-space: pre-line;
+}
+.score-small>p span{
+	cursor:pointer;
+}
+@media(max-width:1200px){
+	.condiciones-blockDelta{
+		width:600px;
+	}
+	.condiciones-inner p{
+		font-size:20px;
+	}
+}
+.condiciones-small{
+	display:none;
+}
+.grupo-block  p{
+	margin:0px;
+}
+@media (max-width:991px){
+	.condiciones-inner{
+		width:80%;
+		display:block;
+		margin:0 auto;
+	}
+	#traviasPage .left-menu-block{
+		display:none;
+	}
+
+	.condiciones-blockDelta{
+		padding-top:60px;
+		width:100%;
+		margin-left:0px;
+	}
+	.condiciones-inner{
+		height:100vh;
+	}
+	.condiciones-small{
+		display:block;
+		min-height:100vh;
+		background:url("../img/pronostic-background.jpg");
+		background-position: center;
+		background-size:cover;
+	}
+	
+}
+@media (max-width:480px){
+	.condiciones-blockDelta>h3{
+		font-size:27px;
+	}
+	.condiciones-inner p{
+		font-size:18px;
+	}
+}
+
+
+
+
+
+
+/* Trivias  */
+
+.trivias-inner-block{
+	margin-left:70px;
+	margin-top:-30px;
+	display:inline-block;
+}
+.wrapper-header-trivias>h2{
+	font-size:38px;
+	margin-top:20px;
+	display:inline-block;
+	color:#a71612;
+	font-family: DushaFifa;
+	font-weight:bold;
+	margin-bottom:0px;
+}
+.wrapper-header-trivias>h2>span{
+	font-size:38px;
+	font-weight:400;
+}
+.timer-trivias{
+	display:inline-flex;
+	margin-left:10px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top:4px;
+}
+.timer-trivias img{
+	width:25px;
+	margin-right:10px;
+}
+.timer-trivias  p{
+	font-size:22px;
+	font-family: DushaFifa;
+	color:#000000;
+	margin:0px;
+}
+.radioBox{
+	border-bottom:2px solid #d4d4d4;
+	margin-top:10px;
+}
+.radioBox h4{
+	font-size:22px;
+	font-family: DushaFifa;
+	font-weight:400;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+.radioBox p{
+	margin-bottom:5px;
+	margin-top:0px;
+}
+
+.checkbox-wrapper [type="radio"]:checked,
+.checkbox-wrapper [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+ .checkbox-wrapper [type="radio"]:checked + label,
+ .checkbox-wrapper [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+   /* width:120px;*/
+    line-height: 20px;
+    display: inline-block;
+    color: #000000;
+    font-size:16px;
+	font-family: DushaFifa;
+}
+.checkbox-wrapper [type="radio"]:checked + label:before,
+.checkbox-wrapper [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+   	right: -28px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #b51219;
+    border-radius: 100%;
+    background: #fff;
+}
+.checkbox-wrapper [type="radio"]:checked + label:after,
+.checkbox-wrapper [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #c3a679;
+    position: absolute;
+    top: 4px;
+   	right: -24px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+.checkbox-wrapper [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.checkbox-wrapper [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.responder-button:hover , .respuest-button:hover{
+	opacity:0.7;
+}
+.responder-button , .respuest-button{
+	float:right;
+	transition:.3s ease all;
+	cursor:pointer;
+	font-size:20px;
+	color:white;
+	font-family: DushaFifa;
+	border:0px;
+	padding:5px 30px;
+	background:url("../img/smallButBack.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius:15px;
+	overflow:hidden;
+	background-size:cover;
+	margin-top:10px;
+}
+.respuest-button{
+	background:url("../img/anter-button.png");
+	background-position: center;
+	background-size:cover;
+	padding:5px 40px;
+	background-repeat: no-repeat;
+}
+.respuest-button{
+	margin-left:50px;
+}
+.small-trivias{
+	display:none;
+}
+.trivias-Small-Bann .mobile-menu-pronosticos{
+	top:0px!important;
+}
+@media (max-width:991px){
+	.trivias-slider{		height:100%!important;
+	}
+	.radioBox{
+		border-bottom:0px;
+	}
+	.small-trivias{
+		display:block;
+		padding-top:80px;
+		width:600px;
+		margin:0 auto;
+	}
+	
+	.small-trivias>h3{
+	font-size:45px;
+	margin-top:0px;
+	display:inline-block;
+	color:#a71612;
+	font-family: DushaFifa;
+	font-weight:bold;
+	margin-bottom:0px;
+}
+.small-trivias>.trivias-slider p {
+	margin-bottom:20px;
+
+}
+.small-trivias .radioBox h4{
+	font-size:32px;
+}
+.small-trivias>h3>span{
+	font-size:35px;
+	font-weight:400;
+}
+.small-trivias [type="radio"]:checked,
+.small-trivias [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+ .small-trivias [type="radio"]:checked + label,
+ .small-trivias [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+	 padding-right: 30px;
+    color: #000000;
+    font-size:24px;
+	font-family: DushaFifa;
+}
+.small-trivias [type="radio"]:checked + label:before,
+.small-trivias [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+   	right:0px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #b51219;
+    border-radius: 100%;
+    background: #fff;
+}
+.small-trivias [type="radio"]:checked + label:after,
+.small-trivias [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #c3a679;
+    position: absolute;
+    top: 4px;
+   	right:4px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+.small-trivias [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.small-trivias [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.small-timer-trivias{
+	display:flex;
+	align-items: center;
+	justify-content: center
+}
+.small-timer-trivias>img{
+	margin-right:15px;
+}
+.small-timer-trivias>p{
+	display:inline-block;
+	font-size:22px;
+	font-family: DushaFifa;
+	color:#000000;
+	margin:0px;
+}
+.small-trivias-button{
+	text-align: center;
+	margin-top:30px;
+}
+.small-trivias-button>button{
+	background:url("../img/redSelect.png");
+	background-position: center;
+	background-size:contain;
+	background-repeat: no-repeat;
+	border:0px;
+	font-family:DushaFifa;
+	color:white;
+	font-size:26px;
+	width:280px;
+	height:60px;
+}
+}
+
+@media (max-width:768px){
+	.small-trivias{
+		width:80%;
+		display: block;
+		margin:0 auto
+	}
+}
+
+@media (max-width:480px){
+	div .small-trivias>h3{
+		font-size:40px;
+	}
+	div .small-trivias .radioBox h4{
+		font-size:22px;
+	}
+	.small-trivias [type="radio"]:checked + label, .small-trivias [type="radio"]:not(:checked) + label{
+		font-size:18px;
+	}
+	.small-trivias{
+		width:100%;
+		padding-left:10px;
+		padding-right: 10px;
+		display: block;
+		margin:0 auto;
+		box-sizing:border-box;
+	}
+	.small-trivias .radioBox h4{
+		font-size:26px;
+	}
+}
+.modal.fade.in{
+	top:15%!important;
+}
+body>.modal{
+	min-height:auto!important;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal-button-cont{
+	    position: absolute;
+    top: 450px;
+    margin: 0 auto;
+    text-align: center;
+    left: 20px;
+    right: 0px;
+}
+.modal-button-cont>button:hover{
+	opacity:0.7;
+}
+.modal-button-cont>button{
+	cursor:pointer;
+	color:#e1c39d;
+	transition:.3s ease all;
+	font-family:DushaFifa;
+	border:0px;
+	background:url("../img/modalButton.png");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-size:42px;
+	width:240px;
+	height:50px;
+	
+}
+#exampleModalCenter h2 , #exampleModalCenter h3{
+	position: absolute;
+} 
+#exampleModalCenter h2{
+	text-align: center;
+	width:100%;
+	color:#b6a083;
+	font-size:46px;
+	font-family:DushaFifa;
+	margin-top:3px;
+	margin-left:10px;
+	margin-bottom:0px;
+
+}
+#exampleModalCenter h3{
+	top: 120px;
+    margin: 0 auto;
+    text-align: center;
+    left: 45px;
+    right: 0px;
+    font-size: 75px;
+    color: #b6a083;
+    font-family: DushaFifa;
+    width: 445px;
+    line-height: 55px
+}
+#exampleModalCenter .modal-dialog .modal-content{
+	box-shadow:none!important;
+	border:0px!important;
+}
+.firstSpanModal {
+	font-size:65px;
+	font-weight:100;
+}
+.secSpanModal{
+	font-size: 65px;
+    font-weight: 100;
+    margin-top: -5px;
+    display: block;
+}
+#exampleModalCenter .modal-dialog{
+	top:-20px;
+	min-height:420px;
+	position: relative;
+	background:url("../img/modalShield.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+}
+#traviasPage .modal-backdrop, .modal-backdrop.fade.in{
+	opacity:0.9;
+	background:rgba(0,0,0,0.9);
+	z-index: 1000000000;
+}
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: bkac;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+#exampleModalCenter{
+	overflow:visible;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 0px auto;
+  }
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+.clearfix:before,
+.clearfix:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@media(max-width:600px){
+	#exampleModalCenter .modal-dialog{
+		width:440px;
+		margin:0 auto;
+	}
+	#exampleModalCenter h2{
+		font-size:46px;
+		top:53px;
+	}
+	#exampleModalCenter h3{
+		font-size:72px;
+		left:16px;
+	}
+	.modal-button-cont{
+		top:490px;
+	}
+}
+
+@media(max-width:480px){
+	#exampleModalCenter .modal-dialog{
+		width:350px;
+		margin:0 auto;
+	}
+	#exampleModalCenter h2{
+		font-size: 36px;
+    	top: 92px;
+	}
+	#exampleModalCenter h3{
+		font-size: 46px;
+    	left: 12px;
+   	 	top: 180px;
+   	 	line-height:43px;
+   	 	width:100%;
+	}
+	.secSpanModal{
+		font-size: 49px;
+   		 font-weight: 100;
+    	margin-top: 0px;
+    	display: block;
+	}
+	.firstSpanModal{
+		font-size:49px;
+	}
+	.modal-button-cont{
+		top:490px;
+	}
+}
+
+/* End modal + Trivias */
+
+
+/* recupepar start */
+
+.recupepar{
+	font-size:43px;
+	margin-left:60px;
+	color:#a31015;
+	font-family: DushaFifa;
+	font-weight: 400;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+.wrapper-recupaper-form{
+	width:800px;
+	margin-left:120px;
+	display:inline-block;
+	text-align: center;
+}
+.inner-recupaper-form > form{
+	padding-top:40px;
+	width:70%;
+	display:block;
+	margin:0 auto;
+	border-radius:15px;
+	background-color:rgba(0,0,0,0.2);
+	padding-bottom:10px;
+	padding-left:30px;
+	padding-right:30px;
+}
+.inner-recupaper-form > form h4{
+	color:#010101;
+	font-family: DushaFifa;
+	text-align: left;
+	font-size:28px;
+	margin:0px;
+	margin-bottom:10px;
+}
+.inner-recupaper-form .group-form{
+	margin-bottom:15px;
+}
+
+.group-wrapp-form{
+	margin-top:60px;
+}
+.group-wrapp-form>button:hover{
+	opacity:0.7;
+}
+.group-wrapp-form>button{
+	color:white;
+	transition:.3s ease all;
+	height:60px;
+	cursor:pointer;
+	width:320px;
+	font-family: DushaFifa;
+	font-size:28px;
+	border:0px;
+	background:url("../img/recuperButton.png");
+	background-position: center;
+	background-size:contain;
+	background-repeat: no-repeat;	
+}
+.inner-recupaper-form > form input[type='text']{
+	height:49px;
+	background-color:#e4e4e4;
+	border:0px;
+	width:100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+	border-radius:15px;
+	font-size:28px;
+	font-family:DushaFifa;
+	padding-left:15px;
+	box-sizing: border-box;
+}
+@media screen and (max-width:1400px){
+	div .wrapper-recupaper-form{
+		margin-left:20px;
+	}
+	.inner-recupaper-form > form{
+		width:80%;
+		position: relative;
+		z-index:10000;
+	}
+	.wrapper-recupaper-form{
+		width:600px;
+	}
+}
+@media screen and (max-width:991px){
+	#exampleModalCenter{
+		z-index:100000000000;
+	}
+	#exampleModalCenter .modal-dialog{
+		min-height:320px;
+		top:0px;
+	}
+	#exampleModalCenter h2{
+		font-size:35px;
+	}
+	#exampleModalCenter h3{
+		left:32px;
+		top:70px;
+		font-size:52px;
+		line-height: 41px
+	}
+	.secSpanModal{
+		font-size:47px;
+	}
+	#exampleModalCenter .firstSpanModal{
+		font-size:48px;
+	}
+ .modal-button-cont{
+		top:340px;
+	
+	}
+	.modal-button-cont>button{
+		background-size:100%;
+	}
+	.mobile-menu-pronosticos{
+
+		top:0px;
+	}
+	.small-INN{
+		width:100%;
+		margin:0 auto;
+		text-align: center;
+	}
+	.condiciones-small{
+		padding-top:60px;
+	
+	}
+	.small-INN h2{
+		color:#af1217;
+		font-size:51px;
+		font-family:DushaFifa;
+	}
+	.small-INN h4{
+		font-size:35px;
+		margin:0px;
+		font-family:DushaFifa;
+		margin-bottom:10px;
+		text-align: left;
+	}
+	.small-INN .small-form-group{
+		width: 400px;
+    	margin: 0 auto;	
+    	margin-bottom:20px;
+	}
+	.small-INN form input[type='text']{
+		height:50px;
+		width:400px;
+		border:0px;
+		padding-left:20px;
+		font-size:24px;
+		background-color:#ebebeb;
+	}
+	.small-group-button{
+		margin-top:60px;
+	}
+	.small-group-button>button:hover{
+		opacity:0.7;
+	}
+	.small-group-button button{
+		cursor:pointer;
+		background:url("../img/recuperButton.png");
+		background-position: center;
+		background-size:100% 100%;
+		background-repeat: no-repeat;	
+		border:0px;
+		transition: .3s ease all;
+		font-size:28px;
+		color:white;
+		font-family: DushaFifa;
+		width:340px;
+		height: 60px;
+	}
+}
+@media screen and (max-width:540px){
+	.small-INN h2{
+		font-size:42px;
+		text-align: left;
+	}
+	.small-INN{
+		box-sizing: border-box;
+		padding:0px 20px;
+	}
+	.small-INN .small-form-group{
+		width:100%;
+		text-align: left
+	}
+	.small-INN h4{
+		font-size:28px;
+	}
+	.small-INN form input[type='text']{
+		width:80%;
+		height:40px;
+		font-size:22px;
+	}
+	.small-group-button{
+		text-align: left;
+	}
+}
+@media screen and (max-width:400px){
+	.small-INN h2{
+		text-align: center;
+		font-size:35px;
+	}
+	.small-INN h4{
+		font-size:24px;
+	}
+	.small-INN form input[type='text']{
+		width:100%;
+		padding-left:20px;
+		box-sizing: border-box;
+		font-size:17px;
+	}
+	.small-group-button button{
+		width:100%;
+		height:50px;
+		font-size:24px;
+	}
+	.small-group-button button{
+		background-position: contain;
+	}
+}
+
+
+
+/* Premios block */
+.premios-block{
+	padding-left:70px;
+	margin-top:-70px;
+	width:800px;
+	display:inline-block;
+}
+.premios-block>h2{
+	font-size:52px;
+	text-align: center;
+	
+	margin-bottom:10px;
+	font-family: DushaFifa;
+	font-weight:400;
+	color:#a41015;
+}
+.image-premBlock{
+	border:8px solid #efe1d4;
+	border-radius:50px;
+	min-height:500px;
+	width:100%;
+
+	background:url("../img/4_5.jpg");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+    background-size: 100%;
+}
+.documImg{
+	position: absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	width:220px;
+	bottom:0px;
+	margin:0 auto;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.lent{
+	position: absolute;
+	width:560px;
+	bottom:-40px;
+	left:-10px;
+}
+@media screen and (max-width:1500px){
+	.premios-block{
+		width:700px;
+		margin-top:-20px;
+	}
+}
+@media screen and (max-width:1400px){
+	.premios-block{
+		width:700px;
+		margin-top:-40px;
+	}
+	.image-premBlock{
+		min-height:400px;
+	}
+}
+@media screen and (max-width:1400px){
+	.premios-block{
+		width:630px;
+		padding-left:20px;
+		margin-top:-40px;
+	}
+	.image-premBlock{
+		min-height:400px;
+	}
+}
+@media screen and (max-width:991px){
+	.bannerBlock>h2{
+		text-align:center;
+		color:#b31218;
+		font-family: DushaFifa;
+		font-size:48px;
+	}
+	.bannerBlock{
+		padding-top:80px;
+		padding-bottom:80px;
+	}
+	.innerBannerBlock{
+		width:600px;
+		height:650px;
+		background:url("../img/../img/4_5.jpg");
+		background-position: 	center;	
+		background-size:cover;
+		background-repeat: 	no-repeat;	
+		position: relative;
+		margin:0 auto;
+		margin-bottom:80px;
+	}
+	.bannerBlock>h2{
+		margin-bottom:20px;
+		margin-top:10px;
+		font-size:40px;
+	}
+}
+@media screen and (max-width:767px){
+	.innerBannerBlock{
+		width:500px;
+	}
+	.lent{
+		width:450px;
+	}
+
+}
+@media screen and (max-width:520px){
+	.innerBannerBlock{
+		width:400px;
+		height:500px;
+	}
+	.lent{
+		width:320px;
+		bottom:-20px;
+	}
+}
+@media screen and (max-width:420px){
+.innerBannerBlock{
+		width:100%;
+		height:500px;
+	}
+	.lent{
+		width:250px;
+		bottom:-20px;
+		left:0px;
+	}
+}
+
+
+
+/* Menu style's */
+
+.menu-overlay{
+   position: fixed; /* Sit on top of the page content */
+   display: none; /* Hidden by default */
+   width: 100%; /* Full width (cover the whole page) */
+   height: 100%; /* Full height (cover the whole page) */
+   top: 0; 
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+   z-index: 100000000000000; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+.menu-delta{
+	position: fixed;
+	top:0px;
+	width:400px;
+	min-height:100%;
+	z-index:100000000000000000000;
+	background:url("../img/menuBack.png");
+	background-position: 0px -20px;
+	background-size:cover;
+	background-repeat: repeat;
+	left:-500px;
+	transition: .3s ease all
+}
+.activeMenu{
+	left:0px;
+}
+.header-part{
+	padding-top:20px;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.header-part>img{
+	width: 100px;
+	margin-bottom:10px;
+}
+.header-part>p{
+	font-size:28px;
+	color:#000000;
+	margin-top:0px;
+	margin-bottom:100px;
+	font-family: DushaFifa;
+
+}
+.main-part>ul{
+	text-align: center;
+	list-style-type: none;
+	padding-left:0px;
+	margin-top:0px;
+}
+.main-part>ul>li{
+	margin-bottom:10px;
+}
+.main-part>ul>li>a{
+	font-size:24px;
+	font-family: DushaFifa;
+	color:white;
+	text-decoration: none;
+	padding:3px 30px;
+	border-radius:50px;
+	cursor:pointer;
+	transition: .3s ease all;
+}
+.main-part>ul>li>a:hover{
+	background-color:rgba(0,0,0,0.5);
+}
+.logo-part{
+	padding-top:100px;
+	text-align: center;
+}
+.logo-part>img{
+	width:100px;
+}
+.logo-part a{
+	width:100%;
+	display:block;
+	color:white;
+	text-decoration: none;
+	font-size:32px;
+	font-family: DushaFifa;
+}
+
+
+
+
+
+.menu-small-delta{
+	position: fixed;
+	top:0px;
+	width:425px;
+	min-height:100%;
+	z-index:100000000000000000000;
+	background:url("../img/menuBack.png");
+	background-position: top;
+	background-size:cover;
+	background-repeat: no-repeat;
+	left:-500px;
+	transition: .3s ease all
+}
+.activeMenu{
+	left:0px;
+}
+.menu-small-delta .header-part{
+	/*padding-top:20px;
+	text-align: left;
+	padding-left:30px;*/
+}
+.menu-small-delta .header-part>p{
+	margin-bottom:0px;
+}
+.menu-small-delta .header-part>p:nth-child(3n-1){
+	font-family:"RobotoMedium" , sans-serif;
+	margin-top:10px;
+	font-size:24px;
+}
+.menu-small-delta .header-part>p:nth-child(2n-1){
+	margin-top:0px;
+	font-size:24px;
+	font-family:"RobotoRegular" , sans-serif;
+	font-weight:400;
+}
+.menu-small-delta .header-part>img{
+	width:100px;
+/*	margin-left:20px;
+*/}
+.header-part>p{
+	font-size:28px;
+	color:#000000;
+	margin-top:0px;
+	margin-bottom:60px;
+	font-family: DushaFifa;
+
+}
+.menu-small-delta  .main-part>ul{
+	text-align: center;
+	margin-top:120px;
+	list-style-type: none;
+	padding-left:0px;
+}
+.menu-small-delta .main-part>ul>li{
+	margin-bottom:5px;
+}
+.menu-small-delta  .main-part>ul>li>a{
+	font-size:24px;
+	font-family: DushaFifa;
+	color:white;
+	text-decoration: none;
+	padding:10px 50px;
+	border-radius:15px;
+	cursor:pointer;
+	transition: .3s ease all;
+	display:inline-block;
+	
+}
+.main-part>ul>li>a:hover{
+	background-color:rgba(0,0,0,0.5);
+}
+.logo-part{
+	padding-top:20px;
+	text-align: center;
+}
+.logo-part>img{
+	width:75px;
+}
+.logo-part a{
+	width:100%;
+	display:block;
+	color:white;
+	text-decoration: none;
+	font-size:24px;
+	font-family: DushaFifa;
+}
+
+@media screen and (max-width:767px){
+	.menu-small-delta{
+		width :400px;
+	}
+}
+@media screen and (max-width:540px){
+	.menu-small-delta .main-part>ul{
+		margin-top:30px!important;
+	}
+	.menu-small-delta .header-part>img{
+		width:80px;
+	}
+	.menu-small-delta .header-part>p:nth-child(3n-1){
+		font-size:22px;
+	}
+	.menu-small-delta .header-part>p:nth-child(2n-1){
+		font-size:22px;
+	}
+	.menu-small-delta{
+		width: 270px;
+	}
+	.menu-small-delta .main-part>ul>li>a {
+		width:100%;
+		padding:8px 0px;
+		border-radius:0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#indexModal  .wrapper-checkbox{
+	position: relative;
+	z-index:100000000;
+}
+#indexModal .modal-content{
+	padding:30px 50px;
+	border-radius:15px;
+	background:url("../img/mainBackground.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height:400px;
+	width:750px;	
+}
+#indexModal .modal-content{
+	margin:0  auto;
+}
+#indexModal{
+	top:50px!important;
+	overflow-y: hidden;
+}
+#indexModal .modal-content>img{
+	position: absolute;
+    bottom: -80px;
+    left: -170px;
+    width: 350px;
+}
+#indexModal .modal-content .terminos h3 {
+	margin-top:0px;
+	font-family:DushaFifa;
+	font-size:32px;
+	white-space: pre-line;
+}
+#indexModal .modal-content .terminos p{
+	font-family: DushaFifa;
+	font-size:20px;
+	white-space: pre-line;
+}
+#indexModal  .terminos{
+	background-color:white;
+	padding:10px 25px;
+	height:300px;
+	overflow-y: scroll;
+}
+#myModal  .modal-backdrop, .modal-backdrop.fade.in{
+	opacity:0.9;
+	background:rgba(0,0,0,0.9)!important;
+}
+#myModal .modal-content{
+	text-align: center;
+}
+#myModal .modal-content  h3{
+	font-size:24px;
+	font-family: DushaFifa;
+	font-weight:400;
+}
+#indexPage .modal-backdrop, .modal-backdrop.fade.in{
+	opacity:0.9;
+	background:rgba(0,0,0,0.9);
+}
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000000000000000000;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: bkac;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+#exampleModalCenter{
+	overflow:visible;
+	z-index:100000000000000000;
+}
+@media (max-width:991px){
+	#indexModal{
+		overflow:visible;
+	}
+	#indexModal .modal-content{
+		width:560px;
+		margin-top:50px;
+	}
+	#indexModal .terminos{
+		height:250px;
+	}
+	#indexModal .modal-content>img{
+		position: absolute;
+    	bottom: -39px;
+    	left: -133px;
+    	width: 284px;
+	}
+	.wrapper-checkbox .container{
+		line-height: 26px;
+	}
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 0px auto;
+  }
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (max-width: 640px) {
+	#indexModal .modal-content{
+		width:480px;
+	}
+}
+@media (max-width: 540px) {
+	#indexModal .modal-content{
+		width:400px;
+		padding:10px;
+	}
+	div .wrapper-checkbox .container{
+		font-size:22px;
+	}
+	div  .buttonMainModal button{
+		font-size:22px;
+		height:45px;
+	}
+	body #indexModal .modal-content  img{
+		position: absolute;
+    	bottom: -73px;
+    	left: -60px;
+    	width: 165px;
+	}
+}
+@media (max-width:420px){
+	body #indexModal .modal-content img{
+		    position: absolute;
+    bottom: -73px;
+    left: -43px;
+    width: 165px;
+	}
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+.clearfix:before,
+.clearfix:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+@media(max-width:600px){
+	#exampleModalCenter .modal-dialog{
+		min-height:250px;
+		top:40px;
+	}
+	#exampleModalCenter h2{
+		font-size:27px;
+		top:-2px;
+	}
+	#exampleModalCenter h3{
+		left: 8px;
+    	top: 80px;
+    	font-size: 33px;
+    	line-height: 28px;
+	}
+	.secSpanModal{
+		font-size:32px;
+		position: relative;
+		top:-3px;
+	}
+	#exampleModalCenter .firstSpanModal{
+		font-size:31px;
+	}
+ .modal-button-cont{
+		top:250px;
+	
+	}
+	.modal-button-cont>button{
+		background-size:100%;
+		width:200px;
+		font-size:32px;
+	}
+}
+@media(max-width:480px){
+	#exampleModalCenter .modal-dialog{
+		width:100%;
+	}
+	div .buttonMainModal button{
+		height:45px;
+		font-size:22px;
+	}
+}
+/*@media(max-width:480px){
+	#exampleModalCenter .modal-dialog{
+		width:350px;
+		margin:0 auto;
+	}
+	#exampleModalCenter h2{
+		font-size: 36px;
+    	top: 92px;
+	}
+	#exampleModalCenter h3{
+		font-size: 46px;
+    	left: 12px;
+   	 	top: 180px;
+   	 	line-height:43px;
+   	 	width:100%;
+	}
+	.secSpanModal{
+		font-size: 49px;
+   		 font-weight: 100;
+    	margin-top: 0px;
+    	display: block;
+	}
+	.firstSpanModal{
+		font-size:49px;
+	}
+	.modal-button-cont{
+		top:490px;
+	}
+}*/
+@media(max-width:420px){
+	#indexModal .modal-content .terminos p{
+		font-size:19px;
+	}
+
+	#indexModal  .modal-content{
+		padding:20px;
+		width:100%;
+	}
+	div .wrapper-checkbox .container{
+		font-size:19px;
+	}
+}
+.wrapper-checkbox .container {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 26px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family:DushaFifa;
+}
+.wrapper-checkbox .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.wrapper-checkbox{
+	margin-top:25px;
+}
+.wrapper-checkbox .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:white;
+
+}
+.wrapper-checkbox .container:hover input ~ .checkmark {
+    background-color: white;
+}
+.wrapper-checkbox .container input:checked ~ .checkmark {
+    background-color: white;
+}
+.wrapper-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.wrapper-checkbox .container input:checked ~ .checkmark:after {
+    display: block;
+}
+.wrapper-checkbox .container .checkmark:after {
+  	left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 13px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.buttonMainModal {
+	text-align: right;
+	position: relative;
+	z-index:10000000000;
+}
+.buttonMainModal button{
+	width: 220px;
+    display: inline-block;
+    height: 60px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 28px;
+    font-family: DushaFifa;
+    box-shadow: 0px 7px 11px rgba(0,0,0,0.8);
+    background: url(../img/button-background.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.deltaPageOmega .pronosticos-small-block{ 
+	background:url("../img/strangeBck.png");
+	background-position: bottom;
+}
+
+@media  (max-width:991px){
+	.small-dropdown{
+		margin-top:59px;
+		width:100%;
+	}
+	.small-dropdown>.custom-dropdown{
+		margin-top:0px;
+		width:100%;
+		margin-left:0px;
+	}
+	.small-dropdown>.custom-dropdown select{
+		background:#e5ddc6;
+		padding-left:5px;
+		border-radius:0px;
+		width:100%;
+		color:#000000;
+		font-family:AvenirNextRegular;
+	}
+	.small-dropdown  .custom-dropdown::before{
+		top:0px;
+		background:url("../img/strArrow.png");
+		background-repeat: no-repeat;
+		background-size:34px;
+		background-position: center;
+	}
+	.small-dropdown>.custom-dropdown:after{
+		    content: ""!important;
+	    height: 2px!important;
+	    width: 96%!important;
+	    position: absolute;
+	    top:40px!important;
+	    background-color: #a7a190!important;
+	    z-index: 10000000;
+	    left: 5px!important;
+	}
+	.small-dropdown>.custom-dropdown  option{
+		background-color:#e5ddc6;
+	}
+}
+@media (max-width:480px){
+	.small-another-block>.wrapper-inner-me>h3{
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	.small-dropdown .dropdown-text>p{
+		margin-top:0px;
+	}
+	.small-dropdown .dropdown-text{
+		width:100%;
+	}
+}
+
+
+
+/* Ranking  Page */
+.ranking-wrapper{
+	margin-top:-40px;
+	padding-left:60px;
+	display: inline-block;
+}
+.ranking-profile{
+	display:inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width:600px;
+
+}
+.ranking-profile>h3{
+	margin-left:5px;
+	font-family: DushaFifa;
+	font-size:26px;
+	line-height: 35px;
+	color:#a41115;
+}
+.ranking-profile>h3>span{
+	color:black;
+}
+
+.ranking-profile >* {
+	display:inline-block;
+}
+.top-ranking{
+	width:220px;
+}
+.top-ranking>h3{
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:42px;
+	font-family: DushaFifa;
+	font-weight: 400;
+	color:#ac4238;
+}
+.top-top-block{
+	width:200px;
+}
+.top-top-block>.wrap-content p{
+	text-align: center;
+	color:#ac4238;
+	font-family:DushaFifa;
+	font-weight:400;
+	margin:0px;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+.top-top-block>.wrap-content{
+	width:250px;
+	margin-left:5px;
+	display:inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.general-top-block{
+	width:200px;
+	background:url("../img/bigGeneral.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	display:inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.non-general-block{
+	width:250px;
+	background:url("../img/bigGeneral.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	display:inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.general-top-block p{
+	font-size:34px;
+	margin:10px 0px;
+	color:#ac4238;
+	font-family:DushaFifa;
+
+}
+.non-top-block p{
+	font-size:16px;
+	margin:5px 0px;
+	margin-bottom:3px;
+	color:#ac4238;
+	font-family:DushaFifa;
+
+}
+.general-top-block>span{
+	position: absolute;
+	left:-5px;
+	color:#ac4238;
+	font-size:14px;
+	font-family: DushaFifa;
+	font-weight:400;
+	-webkit-transform:rotate(-90deg);
+	        transform:rotate(-90deg);
+}
+.non-general-block>p{
+	font-size:24px;
+	margin:5px 0px;
+	color:#ac4238;
+	font-family:DushaFifa;
+} 
+.main-foootball{
+	height:245px;
+	width:250px;
+	padding:15px 10px;
+	overflow-y: scroll;	
+	background-color:white;
+}
+.ranking-football{
+	position: relative;
+	left:-150px;
+	top:-150px;
+	display:inline-block;
+}
+.main-foootball p{
+	margin:0px;
+	font-family:DushaFifa;
+	font-size:13px;
+	font-weight:400;
+}
+.main-foootball p span{
+	display:inline-block;
+	margin-right:5px;
+}
+.ranking-football>button{
+	width:100%;
+	font-size:26px;
+	padding:6px  0px;
+	border:0px;
+	font-family: DushaFifa;
+	color:#b8141a;
+	background-color:#efe4c0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top: 3px  solid  white;
+	border-left: 3px  solid  white;
+	border-right: 3px  solid  white;
+	margin-right:-5px;
+	cursor:pointer;
+}
+.left-side-block{
+	position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    top: 168px;
+    left: -152px;
+	z-index: 999;
+}
+.right-side-block{
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	right:-123px;
+	top:155px;
+}
+.right-side-block>button{
+	font-size:18px;
+	padding:10px  15px;
+	border:0px;
+	font-family: DushaFifa;
+	color:#b8141a;
+	background-color:#efe4c0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top: 3px  solid  white;
+	border-left: 3px  solid  white;
+	border-right: 3px  solid  white;
+	cursor: pointer;
+}
+.final-button{
+	text-transform: uppercase;
+}
+.left-side-block>button{
+	font-size:18px;
+	padding:10px  10px;
+	border:0px;
+	font-family: DushaFifa;
+	color:#b8141a;
+	background-color:#efe4c0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top: 3px  solid  white;
+	border-left: 3px  solid  white;
+	border-right: 3px  solid  white;
+	cursor: pointer;
+}
+.football-ship{
+	position: absolute;
+	    left: -132px;
+    top: 265px;
+    position: absolute;
+	z-index: 1;
+}
+.football-ship>img{
+	width:500px;
+}
+@media (min-width:1800px){
+		.ranking-football{
+			left:8%;
+		}
+}
+@media (max-width:1800px){
+	.ranking-wrapper{
+		margin-top:0px;
+	}
+	.ranking-football{
+			left:0%;
+	}
+}
+@media (max-width:1600px){
+	.ranking-football{
+		left:-150px;
+	}
+}
+
+@media (max-width:1400px){
+	.ranking-wrapper{
+		margin-top:0px;
+		padding-left:25px;
+	}
+	.top-ranking{
+		margin-top:-10px;
+	}
+	.top-ranking>h3{
+		font-size:38px;
+	}
+}
+@media (max-width:1260px){
+	div  .ranking-football{
+		left: 41%;
+    	position: absolute;
+    	top: 141px;
+    	z-index: 1000000000000000000000;
+	}
+
+}
+@media (max-width:1100px){
+	.ranking-football{
+		left:44%!important;
+	}
+	.main-foootball{
+		height: 225px;
+    	width: 205px;
+    	padding: 15px 10px;
+    	overflow-y: scroll;
+    	background-color: white;
+	}
+	.football-ship{
+	    left: -105px;
+	    top: 259px;
+	    position: absolute;
+	}
+	.football-ship>img{
+		width:410px;
+	}
+	.left-side-block{
+		top:155px;
+	}
+}
+@media (max-width:991px){
+	.persons-score-match{
+		width:80%;
+		margin:0 auto;
+	}
+	.wrapplinger-profile-image{
+		display:inline-block;
+	}
+	.wrapplinger-profile-image img{
+		width:40px;
+	}
+	.wrapplinger-text-profile{
+		display:inline-block;
+		margin-left:20px;
+	}
+	.wrapplinger-text-profile>p{
+		margin:0px;
+		font-family:"Roboto" , sans-serif;
+		font-size:18px;
+		color:black;
+		margin-bottom:5px;
+	}
+	.wrapplinger-text-profile>span{
+		color:#bababa;
+		font-family:"Roboto" , sans-serif;
+		font-size:16px;
+	}
+	.person-info{
+		margin-top:10px;
+		width:100%;
+		display:inline-block;
+		align-items: center;
+		padding-bottom:10px;
+		border-bottom:1px solid #bababa;
+	}
+	.persons-score-match{
+		margin-top:20px;
+		height:450px;
+		overflow-y: scroll
+	}
+	.person-all{
+		width:100%;
+		display:flex;
+		padding: 10px 0px;
+		justify-content: space-around;
+		align-items: center;
+		background-color:white;
+	}
+	.person-all>div{
+		display:inline-flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.person-all>div>h3{
+		margin:0px;
+		font-size:24px;
+		color:#a41015;
+		font-family:DushaFifa;
+		margin-bottom:5px;
+		font-weight:400;
+	}
+	.person-all>div>h3+span{
+		font-family:DushaFifa;
+			color:#a41015;
+	}
+}
+@media  (max-width:640px){
+	.persons-score-match{
+		width:95%;
+		box-sizing: border-box;
+	}
+	.persons-score-match{{
+		height:320px;
+	}
+}
+
+}
+@media  (max-width:767px){
+	.imageSlider  .left-menu-block{
+		display:none;
+	}
+		#indexModal .modal-content>img{
+		position: absolute;
+    	bottom: -39px;
+    	left: -77px;
+    	width: 203px;
+	}
+	
+
+}
+@media  (max-width:640px){
+	#indexModal .modal-content>img{
+	    position: absolute;
+    bottom: -39px;
+    left: -54px;
+    width: 175px;
+	}
+}
+@media (max-width:540px){
+	body	 #indexModal .modal-content>img{
+		position: absolute;
+    	bottom: -54px;
+    	left: -42px;
+    	width: 156px;
+	}
+	.buttonMainModal{
+		padding-top:30px;
+	}
+}
+.imageSlider .menu-big-delta , .imageSlider .menu-small-delta{
+	z-index:10000000000000000000000000000000000000;
+}
+.menuSLider{
+	z-index:1000000000!important;
+}
+
+.wrapper-session{
+	text-align: center;
+}
+.session:hover{
+	opacity:0.7;
+}
+.session{
+	transition: .3s  ease  all;
+	cursor:pointer;
+	width:auto;
+	display:inline-block;
+	margin:0  auto;
+	font-size:24px;
+	color:#000000;
+	/*font-family:"RobotoMedium" , sans-serif;*/
+	font-family: DushaFifa;
+    color: white;
+}
+@media  (max-width:991px){
+	#myModal.fade.in{
+	top:50%!important;
+}
+}
+select::-ms-expand {
+    display: none;
+}
+
+@media (max-width:1400px){
+	#justThis{
+		margin-top:-5px!important;
+	}
+}
+.qweDSlider .mobile-menu-pronosticos{
+		display:none;
+}
+@media (max-width:767px){
+	.qweDSlider   .mobile-menu-pronosticos{
+		display:block;
+	}
+	.qweDSlider .main-img-block{
+		display:none;
+	}
+	.qweDSlider  .small-image-slider{
+		margin-top: 60px;
+	}
+	.qweDSlider .left-side-mobile>p{
+		margin-bottom:0px;
+		font-size:16px;
+	}
+	.qweDSlider  .right-side-mobile>p{
+		margin-bottom:0px;
+		font-size:16px;
+	}
+	.qweDSlider .right-side-mobile{
+		margin-right:0px;
+	}
+}
+
+.more-buttonRight{
+	margin-top:25px;
+}
+.more-buttonRight>button{
+	    cursor: pointer;
+    font-size: 26px;
+    font-family: DushaFifa;
+    color: white;
+    border: 0px;
+    padding: 10px 52px;
+	padding-top:6px;
+    background: url(../img/submitButtonRed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media  (max-width:480px){
+	.pronosticos-small-block>.omegaMenuDelta{
+		margin-top:60px!important;
+	}
+	.small-another-block>.wrapper-inner-me>h3{
+		font-size:27px;
+	}
+	.small-dropdown .dropdown-text>p{
+		font-size:26px;
+	}
+	.small-another-block .custom-dropdown{
+		margin:0px;
+	}
+}
+@media (max-width:355px){
+	div .small-dropdown select{
+		width:230px;
+		font-size:22px;
+	}
+	.wrapper-sec-slide>button{
+		width:230px;
+		font-size:22px;
+	}
+	.small-dropdown{
+		margin-top:20px;
+	}
+	.small-another-block>.wrapper-inner-me>h3{
+		font-size:24px;
+	}
+	.small-dropdown .dropdown-text>p{
+		font-size:22px;
+	}
+	div.roundred{
+		width:16px;
+		height:15px;
+		font-size:13px;
+	}
+	.small-timer{
+		margin-left:5px;
+		width:15px;
+	}
+	.time-small-block>span{
+		font-size:14px;
+	}
+}
+
+@media(max-width:640px){
+	.persons-score-match{
+		    height: 70vh;
+	}
+}
+@media(max-width:540px){
+	.persons-score-match{
+		    height: 70	vh;
+	}
+}
+@media(max-width:330px){
+	.small-item-wrap .country-block>img{
+		width:19px;
+	}
+	.div .country-block>p{
+		font-size:12px;
+	}
+	div .country-block>p>span{
+		font-size:14px;
+	}
+	div.leftRound,div.rightRound{
+		margin:0px;
+	}
+}
+@media(max-width:400px){
+	.small-item-wrap{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center
+	}
+	div .time-small-block{
+		height:auto;
+		margin-top:0px;
+		margin-bottom:5px;
+	}
+	.country-block{
+		margin-left:-20px;
+	}
+}
+.rankingPAGE .custom-dropdown select,  .rankingPAGE .custom-dropdown select  option,.pronosticDelta .custom-dropdown select  , .pronosticDelta  .custom-dropdown select  option , .wrapplinger-text-profile>p  , .wrapplinger-text-profile>span{
+	font-family:DushaFifa;
+}
+
+@media (min-width:1400px){
+	.trivias-inner-block{
+		max-width:700px!important;
+	}
+}
+@media (max-width:1399px){
+	.timer-right-block{
+		width:250px;
+	}
+	.trivias-inner-block{
+		max-width:600px!important;
+	}
+}
+@media (max-width:1100px){
+	.trivias-inner-block{
+		max-width:500px!important;
+	}
+}
+
+@media (max-width:900px){
+	.header-part {
+		padding-top: 20px;
+		text-align: center;
+		width: 100%;
+		height: 143px;
+		overflow: hidden;
+	}
+}
+
+@media all and (max-width: 799px) and (min-width: 320px){
+	.user-profile-round-lg {
+		width: 80px !important;
+		height: 80px !important;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+	
+}
+
+
+.user-profile-round-sm{
+	width: 45px;
+	height: 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.user-profile-round-lg{
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+input[type='password'] {
+	width: 90%;
+	height: 47px;
+	border-radius: 3px;
+	border: 0px;
+	padding-left: 50px;
+	font-size: 18px;
+	color: #9A9EAA;
+}
+
+div#wn { 
+    position:relative; 
+    width:680px;
+	font-size: 20px;
+    color: white;
+    font-family: DushaFifa;
+    line-height: 20px;
+    padding-top: 12px;
+    height: 45px;
+    overflow:hidden;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lyr div{
+	margin-bottom: 25px;
+}
+

@@ -1,0 +1,1 @@
+<h2 class="text-center">Please enter your company name on URL</h2>
