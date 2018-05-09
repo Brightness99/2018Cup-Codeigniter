@@ -24,7 +24,7 @@ $('#login-btn').on('click', function(){
 	var formData = new FormData($("#login-frm")[0]);
 	
 	$.ajax({
-		url: '../'+company+'/doLogin',
+		url: company+'/doLogin',
 		type: "POST",
 		data: formData,
 		async: false,
