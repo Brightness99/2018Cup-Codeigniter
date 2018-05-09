@@ -741,7 +741,7 @@ div.rightRound{
 	width:20%;
 }
 div div .resuldo-football{
-	width:44%;
+	width:40%;
 }
 div div .puntos-football{
 	width:32%;
@@ -772,7 +772,7 @@ div div .timer-football{
 	top:-5px;
 }*/
 div div .first-command{
-	width:126px;
+	width:140px;
 	justify-content: flex-start;
 	margin-right: 5px;
 }
@@ -894,6 +894,9 @@ div div .second-command{
 	background:url("../img/submitButtonRed.png");
 	background-repeat: no-repeat;
 	background-size:contain;
+}
+.div-select select {
+	display: flex;
 }
 @media (max-width:1500px) {
 	div .timer-right-block{
@@ -1075,10 +1078,10 @@ div div .second-command{
 		height:270px;
 	}
 	div .first-command img{
-		width:45px;
+		width:40px;
 	}
 	div .second-command img {
-		width:45px;
+		width:40px;
 	}
 	.first-command p, .second-command p{
 		font-size:16px;
@@ -1178,6 +1181,29 @@ div div .second-command{
 		height:240px;
 	}
 }
+
+@media (min-width:992px) and (max-width:1200px) {
+	.football-item>.pronostico-football {
+		width: 65%;
+	}
+	.wrapper-right-side-item {
+		width: 35%;
+	}
+	div div .resuldo-football {
+		width: 30%;
+	}
+	div div .puntos-football {
+		width: 25%;
+	}
+	.wrapper-right-side-item>div:nth-child(3) {
+		width: 40%;
+	}
+	/* .football-item .div-select::before {
+		width: 0;
+	} */
+
+}
+
 @media (max-width:1060px){
 	.timer-right-block{
 		margin-top:-100px;
@@ -3950,7 +3976,7 @@ select::-ms-expand {
 		margin:0px;
 	}
 }
-@media(max-width:400px){
+@media(max-width:600px){
 	.small-item-wrap{
 		display:flex;
 		flex-direction: column;
@@ -3964,6 +3990,12 @@ select::-ms-expand {
 	}
 	.country-block{
 		margin-left:-20px;
+	}
+}
+
+@media(max-width:480px){
+	div .time-small-block{
+		margin-top: 10px;
 	}
 }
 .rankingPAGE .custom-dropdown select,  .rankingPAGE .custom-dropdown select  option,.pronosticDelta .custom-dropdown select  , .pronosticDelta  .custom-dropdown select  option , .wrapplinger-text-profile>p  , .wrapplinger-text-profile>span{
